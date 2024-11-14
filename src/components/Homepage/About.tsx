@@ -12,8 +12,10 @@ const About: React.FC = () => {
       id="about"
       className="flex flex-col items-center pt-[200px] w-full h-full overflow-hidden"
     >
-      <AboutInfoSection />
-      <AboutVideoSection />
+      <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row w-full h-full lg:w-[70%] justify-between items-center lg:mt-[250px] mt-0">
+        <AboutInfoSection />
+        <AboutVideoSection />
+      </div>
       <SlideShowSection />
     </section>
   );
@@ -23,7 +25,7 @@ const About: React.FC = () => {
 const AboutInfoSection: React.FC = () => (
   <section
     id="about-info"
-    className="flex flex-col lg:flex-row justify-between w-[90%] lg:w-[70%] gap-8 lg:gap-[150px] mt-[100px] lg:mt-[450px]"
+    className="flex flex-col lg:flex-row justify-between w-[90%] lg:w-[70%] gap-8 lg:gap-[150px] mt-[100px]"
   >
     <div className="flex flex-col gap-2 w-full lg:w-[680px]" id="about-text">
       <h3 className="text-primary uppercase font-medium text-[12px] lg:text-[14px] leading-[15px]">
@@ -63,16 +65,16 @@ const AnimatedButton: React.FC<AnimatedButtonProps> = ({ label }) => (
 // Component for "About Video" section
 const AboutVideoSection: React.FC = () => (
   <div
-    className="w-full lg:w-[500px] h-[400px] lg:h-[600px] relative"
+    className="w-full lg:w-[500px] h-[400px] lg:h-[600px] relative "
     id="about-video"
   >
-    <div className="absolute top-0 right-0 about-c1 w-[200px] lg:w-[380px] h-[200px] lg:h-[387px] shadow-xl p-3 lg:p-6 translate-x-8 lg:translate-x-[100px] -translate-y-8 lg:-translate-y-[100px] opacity-0">
+    <div className="absolute top-0 right-0 about-c1 w-[200px] lg:w-[380px] h-[200px] lg:h-[387px] shadow-xl p-3 lg:p-6 ">
       <ImageWrapper src="/images/img.png" alt="img" />
     </div>
-    <div className="absolute bottom-0 left-0 about-c2 w-[180px] lg:w-[300px] h-[200px] lg:h-[387px] shadow-xl p-3 lg:p-6 bg-white -translate-x-8 lg:-translate-x-[100px] translate-y-8 lg:translate-y-[100px] opacity-0 z-10">
+    <div className="absolute bottom-0 left-0 about-c2 w-[180px] lg:w-[300px] h-[200px] lg:h-[387px] shadow-xl p-3 lg:p-6 bg-white z-10">
       <ImageWrapper src="/images/about-img.png" alt="img" />
     </div>
-    <Button className="absolute top-[35%] left-[15%] lg:left-[20%] bg-secondary text-white hover:bg-slate-900 rounded-none z-20 opacity-0 about-btn">
+    <Button className="absolute top-[35%] left-[15%] lg:left-[20%] bg-secondary text-white hover:bg-slate-900 rounded-none z-20 about-btn">
       <Play />
     </Button>
   </div>
@@ -94,7 +96,7 @@ const ImageWrapper: React.FC<ImageWrapperProps> = ({ src, alt }) => (
 // Component for "Slide Show" section
 const SlideShowSection: React.FC = () => (
   <section
-    className="w-full mt-10 h-[400px] lg:h-[600px] flex flex-col lg:flex-row ring-1"
+    className="w-full mt-10 h-[400px] lg:h-[600px] flex flex-col lg:flex-row"
     id="slide-show"
   >
     <Slide imageSrc="/images/slide-1.jpg" alt="img1" />

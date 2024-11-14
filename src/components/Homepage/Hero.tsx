@@ -42,7 +42,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="w-full h-[90vh] relative flex items-center justify-center flex-col md:flex-row overflow-hidden">
+    <section className="w-full h-[90vh] relative flex items-center justify-center flex-col md:flex-row ">
       <div className="absolute top-0 left-0 z-0 w-full h-full" id="bg-im">
         <div className="relative w-full h-full">
           <Image src={"/images/hero-img.png"} alt="hero-img" fill />
@@ -87,7 +87,7 @@ const Hero = () => {
       </div>
       {/* Info summary section */}
       <div
-        className="absolute bottom-0 left-0 translate-x-0 lg:translate-x-1/3 translate-y-[100%] w-full md:w-[1081px] h-auto md:h-[235px] bg-primary z-20 flex overflow-hidden"
+        className="absolute bottom-0 left-0 translate-x-0 lg:translate-x-1/3 translate-y-[100%] w-full md:w-[1081px] h-auto md:h-[235px] bg-primary z-20 flex"
         id="info-summary"
       >
         <div className="w-1/2 md:w-[290px] h-[150px] md:h-full bg-secondary z-20 flex flex-col gap-2 items-center justify-center">
