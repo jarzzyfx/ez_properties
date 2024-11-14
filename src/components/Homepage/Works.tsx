@@ -5,7 +5,7 @@ import { MessageSquareMore, Phone, Plus } from "lucide-react";
 
 const Works = () => {
   return (
-    <section className="w-full flex flex-col items-center overflow-hidden">
+    <section className="w-full flex flex-col items-center ">
       <div className="flex flex-col gap-4 w-[90%] lg:w-[70%] my-10 lg:my-14">
         <h3 className="text-[12px] lg:text-[14px] text-center leading-[15px] text-primary uppercase font-medium">
           our works

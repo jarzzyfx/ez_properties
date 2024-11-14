@@ -10,7 +10,7 @@ const About: React.FC = () => {
   return (
     <section
       id="about"
-      className="flex flex-col items-center pt-[200px] w-full h-full overflow-hidden"
+      className="flex flex-col items-center pt-[200px] w-full h-full "
     >
       <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row w-full h-full lg:w-[70%] justify-between items-center lg:mt-[250px] mt-0">
         <AboutInfoSection />
